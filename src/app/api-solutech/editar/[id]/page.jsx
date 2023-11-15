@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react"
-
+import './editar.scss'
 
 export default function FormUser({params}) {
     const id = params.id;
