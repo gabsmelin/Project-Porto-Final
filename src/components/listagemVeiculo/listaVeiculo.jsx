@@ -1,5 +1,7 @@
+'use client'
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import './listagem.scss'
 
 export default function ListaVeiculo() {
     const [veiculo, setVeiculo] = useState([])
