@@ -1,4 +1,4 @@
-
+'use client'
 import { useEffect, useState } from "react"
 import Ajuda from "@/components/ajuda/page";
 import Sobre from "@/components/sobre/page";
