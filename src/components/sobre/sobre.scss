@@ -15,4 +15,17 @@
     .barra-sep {
       width: 100%;
     } 
-}}
+    div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 2% 4%;
+  
+        h1 {
+          font-size: 200%;
+          width: 50%;
+        }
+      }
+}
+}
