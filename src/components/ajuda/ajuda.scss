@@ -46,5 +46,28 @@
     text-align: center;
   }
 
+  @media (max-width: 735px) {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 10px;
+      margin-top: 3%;
+    }
 
+    p {
+      width: 80%;
+      font-size: 12px;
+    }
+
+    .parte-um {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    h1 {
+      font-size: 16px;
+    }
+  }
 }
