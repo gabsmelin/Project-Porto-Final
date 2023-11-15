@@ -7,11 +7,11 @@ export default function Ajuda() {
         <div className="container-aju">
             <h1>Como podemos te ajudar?</h1>
             <div className="parte-um">
-                    <Link href='/solutech/perdir-guincho'>
+                    <Link href='/api-solutech/listagem'>
                         <Image src="/img/sireneAjuda.png" alt="Sirene." width={80} height={150}/>
                         <p>Cadastre seu carro</p>
                     </Link>
-                    <Link href='/sobreNos'>
+                    <Link href='/solutech/sobre-nos'>
                         <Image src="/img/em-formacao.png" alt="Mão dando joia com icone de informação." width={80} height={100}/>
                         <p>Sobre nós</p>
                     </Link>
