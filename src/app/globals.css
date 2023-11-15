@@ -2,26 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.container-home { 
+    @apply flex flex-row items-center justify-between mx-8 my-0 font-bold text-4xl min-h-screen;
+}
+.container-home h1 {
+    @apply text-center;
+}
+.container-home img {
+    @apply w-1/2;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (max-width: 600px) {
+    .container-home {
+        @apply flex flex-col mx-0 my-10 items-center justify-center text-center;
+    }
+    
+    .container-home h1 {
+        @apply w-1/2 mb-6;
+    }
 }
