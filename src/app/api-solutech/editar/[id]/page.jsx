@@ -29,6 +29,7 @@ export default function FormUser({params}) {
         console.log(id);
 
         fetch(`http://localhost:8080/Solutech/api/veiculo/${id}`, {
+            method: "PUT",
             headers: {
                 'Content-Type': 'application/json',
             }, 
