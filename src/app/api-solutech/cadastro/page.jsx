@@ -29,7 +29,7 @@ export default function FormUser() {
         e.preventDefault();
 
         fetch('http://localhost:8080/Solutech/api/veiculo/', {
-            
+            method: "POST",
             headers: {
                 'Content-Type': 'application/json; charset=UTF-8'
             
