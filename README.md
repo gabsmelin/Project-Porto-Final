@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Olá professor!
 
-## Getting Started
+Integrantes: Tem uma página com o nom e RMs de todos os integrantes do grupo.
 
-First, run the development server:
+Não usamos python em nossa aplicação, portando não foi usando no front-end. Ultilizamos a API em Java, segue os URLs:
+-Chamado:
+- http://localhost:8080/Solutech/api/chamado
+- //GET http://localhost:8080/Solutech/api/chamado (Listar todos os produtos)
+- //GET http://localhost:8080/Solutech/api/chamado/1 (Pesquisar pelo Id)
+- //POST http://localhost:8080/Solutech/api/chamado/ (Cadastrar um produto)
+- //PUT http://localhost:8080/Solutech/api/chamado/1 (Atualizar um produto)
+- //DELETE http://localhost:8080/Solutech/api/chamado/1 (Apagar um produto)
+- Contato Segurado:
+- http://localhost:8080/Solutech/api/contatoSegurado
+- GET http://localhost:8080/Solutech/api/contatoSegurado/query?nome=aaa(Pesquisar por nome)
+- GET http://localhost:8080/Solutech/api/contatoSegurado/ (Listar todos os produtos)
+- GET http://localhost:8080/Solutech/api/contatoSegurado/1 (Pesquisar pelo Id)
+- POST http://localhost:8080/Solutech/api/contatoSegurado/ (Cadastrar um produto)
+- PUT http://localhost:8080/Solutech/api/contatoSegurado/1 (Atualizar um produto)
+- DELETE http://localhost:8080/Solutech/api/contatoSegurado/1 (Apagar um produto)
+- Endereco Chamado:
+- http://localhost:8080/Solutech/api/enderecoChamado
+- GET http://localhost:8080/Solutech/api/enderecoChamado/query?nome=aaa(Pesquisar por nome)
+- GET http://localhost:8080/Solutech/api/enderecoChamado (Listar todos os produtos)
+- GET http://localhost:8080/Solutech/api/enderecoChamado/1 (Pesquisar pelo Id)
+- POST http://localhost:8080/Solutech/api/enderecoChamado/ (Cadastrar um produto)
+- PUT http://localhost:8080/Solutech/api/enderecoChamado/1 (Atualizar um produto)
+- DELETE http://localhost:8080/Solutech/api/enderecoChamado/1 (Apagar um produto)
+- Endereço Segurado:
+- http://localhost:8080/Solutech/api/enderecoSegurado
+- GET http://localhost:8080/Solutech/api/enderecoSegurado/query?nome=aaa(Pesquisar por nome)
+- GET http://localhost:8080/Solutech/api/enderecoSegurado (Listar todos os produtos)
+- GET http://localhost:8080/Solutech/api/enderecoSegurado/1 (Pesquisar pelo Id)
+- POST http://localhost:8080/Solutech/api/enderecoSegurado/ (Cadastrar um produto)
+- PUT http://localhost:8080/Solutech/api/enderecoSegurado/1 (Atualizar um produto)
+- DELETE http://localhost:8080/Solutech/api/enderecoSegurado/1 (Apagar um produto)
+- Segurado:
+- http://localhost:8080/Solutech/api/segurado
+- GET //http://localhost:8080/Solutech/api/segurado/query?nome=aaa(Pesquisar por nome)
+- GET //http://localhost:8080/Solutech/api/segurado (Listar todos os produtos)
+- GET //http://localhost:8080/Solutech/api/segurado/1 (Pesquisar pelo Id)
+- POST //http://localhost:8080/Solutech/api/segurado/ (Cadastrar um produto)
+- PUT //http://localhost:8080/Solutech/api/segurado/1 (Atualizar um produto)
+- DELETE //http://localhost:8080/Solutech/api/segurado/1 (Apagar um produto)
+- Veiculo:
+- //http://localhost:8080/Solutech/api/veiculo
+- GET http://localhost:8080/Solutech/api/veiculo/query?nome=aaa(Pesquisar por nome)
+- GET http://localhost:8080/Solutech/api/veiculo (Listar todos os produtos)
+- GET http://localhost:8080/Solutech/api/veiculo/1 (Pesquisar pelo Id)
+- POST http://localhost:8080/Solutech/api/veiculo/ (Cadastrar um produto)
+- PUT http://localhost:8080/Solutech/api/veiculo/1 (Atualizar um produto)
+- DELETE http://localhost:8080/Solutech/api/veiculo/1 (Apagar um produto)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Observação: Para testar a API, é preciso rodar em local host, assim como o projeto Web.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Nossa ideia foi trabalhar para resolver o problema atráves do chatBoot, por isso não tinhamos muita ideia de como desenvolver o front-end, com isso, não temos tantas funcionalidades mas consumimos a API, fazendo todos os métodos(POST, DELETE, PUT E GET). Temos todos os roteamentos de telas mas não usamos todas as tabelas existentens em nosso banco, pois não achamos necessário.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Acesso a Vercel: 
+https://project-porto-final.vercel.app
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Observação: Não sabiamos como(ou se tinha como) fazer com que a api rodasse.
