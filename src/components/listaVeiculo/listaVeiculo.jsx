@@ -40,7 +40,7 @@ export default function ListaVeiculo() {
     return(
         <div className="listagem"> 
             <h1>Lista de usuários</h1>
-            <p><Link href="/teste-api/cadastro">Inserir Produto</Link></p>
+            <p><Link href="/api-solutech/cadastro">Inserir Produto</Link></p>
             <table border={1}>
                 <thead>
                     <tr>
@@ -75,8 +75,8 @@ export default function ListaVeiculo() {
                                 <td>{veiculos.pesoCarga}</td>
                                 <td>{veiculos.alteracoes}</td>
                                 <td>{veiculos.placa}</td>
-                                <td><Link href={`/teste-api/editar/${veiculos.id}`}>Editar</Link></td>
-                                <td><Link href={`/teste-api/detalhes/${veiculos.id}`}>Ver detalhes</Link></td>
+                                <td><Link href={`/api-solutech/editar/${veiculos.id}`}>Editar</Link></td>
+                                <td><Link href={`/api-solutech/detalhes/${veiculos.id}`}>Ver detalhes</Link></td>
                                 <td><button onClick={handleDelete.bind(this, veiculos.id)}>Excluir</button></td>
                             </tr>
                         ))

@@ -1,10 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link';
-
-
-
-
-
+import './ajuda.scss'
 
 export default function Ajuda() {
     return(

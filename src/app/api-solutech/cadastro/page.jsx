@@ -38,7 +38,7 @@ export default function FormUser() {
             },
             body: JSON.stringify(novo)
         }).then(() => {
-            window.location = '/teste-api/listagem'
+            window.location = '/api-solutech/listagem'
         })
     }
 
@@ -51,16 +51,16 @@ export default function FormUser() {
                     <p>Se cadastre no maior seguro de guincho do Brasil</p>
                 </div>
                 <form onSubmit={handleSubmit}>
-                    <input type="text" name="modelo" value={novo.modelo} placeholder="Modelo" onChange={handleChange}/> <br/>
-                    <input type="number" name="peso" value={novo.peso} placeholder="Peso" onChange={handleChange}/> <br/>
-                    <input type="number" name="altura" value={novo.altura} placeholder="Altura" onChange={handleChange}/> <br/>                           
-                    <input type="number" name="comprimento" value={novo.comprimento} placeholder="Comprimento" onChange={handleChange}/> <br/>
-                    <input type="number" name="largura" value={novo.largura} placeholder="Largura" onChange={handleChange} step="0.01"/> <br/>
-                    <input type="number" name="eixos" value={novo.eixos} placeholder="Eixos" onChange={handleChange}/> <br/>                        
-                    <input type="text" name="tipoCarroceria" value={novo.tipoCarroceria} placeholder="Tipo Carroceria" onChange={handleChange}/> <br/>
-                    <input type="number" name="pesoCarga" value={novo.pesoCarga} placeholder="Peso Carga" onChange={handleChange} step="0.01"/> <br/>
-                    <input type="text" name="alteracoes" value={novo.alteracoes} placeholder="Alterações" onChange={handleChange}/> <br/>
-                    <input type="text" name="placa" value={novo.placa} placeholder="Placa" onChange={handleChange}/> <br/>
+                    <input type="text" name="modelo" value={novo.modelo} placeholder="Modelo" onChange={handleChange}/>  
+                    <input type="number" name="peso" value={novo.peso} placeholder="Peso" onChange={handleChange}/>  
+                    <input type="number" name="altura" value={novo.altura} placeholder="Altura" onChange={handleChange}/>                             
+                    <input type="number" name="comprimento" value={novo.comprimento} placeholder="Comprimento" onChange={handleChange}/>  
+                    <input type="number" name="largura" value={novo.largura} placeholder="Largura" onChange={handleChange} step="0.01"/>  
+                    <input type="number" name="eixos" value={novo.eixos} placeholder="Eixos" onChange={handleChange}/>                          
+                    <input type="text" name="tipoCarroceria" value={novo.tipoCarroceria} placeholder="Tipo Carroceria" onChange={handleChange}/>  
+                    <input type="number" name="pesoCarga" value={novo.pesoCarga} placeholder="Peso Carga" onChange={handleChange} step="0.01"/>  
+                    <input type="text" name="alteracoes" value={novo.alteracoes} placeholder="Alterações" onChange={handleChange}/>  
+                    <input type="text" name="placa" value={novo.placa} placeholder="Placa" onChange={handleChange}/>  
                     <button>Cadastrar</button>
                 </form>
             </div>
